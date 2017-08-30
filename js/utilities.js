@@ -31,7 +31,7 @@ utilities.parseObject = function(o, indentLevel, parent)
 			switch(type)
 			{
 				case "[object Object]":
-					if(indentLevel < 6)
+					if(indentLevel < 8)
 						s += this.parseObject(o[prop], indentLevel + 1, prop);
 					else
 						s += indentString + "<em>[object Object],</em><i>too many levels</i>" + indentStringClose;
